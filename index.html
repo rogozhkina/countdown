@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Обратный отсчет"
+    />
+    <meta name="author" content="Наталья Рогожкина" />
+    <title>Countdown</title>
+    <link type="image/x-icon" rel="icon" href="./images/watches.png" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+     <header class="header">
+       <img class="logo" alt="часы" src="./images/watches.png">
+     </header>
+     <main class="content">
+      <div class="event">
+        <p class="event__title">Событие: </p>
+        <p class="event__value" contenteditable="true" id="trigger">Праздник</p>
+      </div>
+      <div class="event">
+        <p class="event__title">Дата события: </p>
+        <input class="event__date" type="date" name="date" id="trigger"> 
+      </div>
+      <input type="button" id="myButton" onclick="buttonClick();" value="Запустить отсчет">
+      <div id="info" style="display: none;">
+        До события осталось:<br>
+        <textarea rows="10" cols="70" id="myTextarea">
+          <p>Часы находятся в разработке</p>
+        </textarea>
+      </div>
+     </main>
+     <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>
